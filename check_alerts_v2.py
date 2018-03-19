@@ -17,7 +17,7 @@ def text_to_voice(values):
         global sleep_timer
         sleep_timer = values["result"]["sleep_timer"]
         if(description!=''):
-                audio_file = "/home/alex/text_to_voice/alerts.mp3"
+                audio_file = "alerts.mp3"
                 tts = gTTS(text= description, lang="en")
                 tts.save(audio_file)
                 #r = os.system("mpg321 "+audio_file)
@@ -69,5 +69,5 @@ while True:
         reboot = reboot*float(sleep_timer)
         if(reboot>80):
           os.system("reboot")
-        sleep(5)
+        sleep(sleep_timer)
 
