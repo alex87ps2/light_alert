@@ -5,7 +5,7 @@ import urllib2
 from time import sleep
 import json
 
-team = 'b43368c213d29200335eb4b2e144b0dd' #IT SERVICE MANAGEMENT GROUP SYS_ID
+team = '' #IT SERVICE MANAGEMENT GROUP SYS_ID
 def text_to_voice(values):
 	description = values["result"]["text"]
         if(description!=''):
