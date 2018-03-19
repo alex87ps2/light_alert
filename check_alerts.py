@@ -16,7 +16,7 @@ def text_to_voice(values):
 
 def check_new_alerts():
         try:
-                response = urllib2.urlopen("https://spiritairlinesdev.service-now.com/api/sa/light_alert_text_to_voice?team="+team)
+                response = urllib2.urlopen()
                 data = response.read()
                 values = json.loads(data)
 		return values
