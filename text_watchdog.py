@@ -20,6 +20,6 @@ while True:
                 counter +=1
         else:
                 counter = 0
-        if(counter>12):
+        if(counter>1):
                 os.system('reboot')
-        sleep(5)
+        sleep(60)
